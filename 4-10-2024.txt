@@ -1,0 +1,7 @@
+completed kaggle course of basic ml
+
+tried implimenting the code to get best number of nodes in random tree regressor
+
+started numpy
+
+completed the pandas course

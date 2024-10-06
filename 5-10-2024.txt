@@ -1,0 +1,5 @@
+completed basic numpy
+
+tried a few programs of sklearn library
+
+started opencv

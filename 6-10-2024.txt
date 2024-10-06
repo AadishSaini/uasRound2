@@ -1,0 +1,3 @@
+halfway through opencv(on transformation of images)
+
+i think i have got the solution to the task, on how to approach the problem.
