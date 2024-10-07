@@ -1,0 +1,5 @@
+started with approaching the problem with masks, created masks for different colours, then used contours to get surrounding colours
+
+completed with the task, able to get desired results
+
+just worked on the task for today
