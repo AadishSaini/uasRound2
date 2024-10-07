@@ -98,8 +98,11 @@ for ai in range(1, 12):
         else:
             blue_in_green+=1
 
-    cv.imshow('red contour', red_pointer_contour)
-    cv.imshow('blue contour', blue_pointer_contour)
+    cv.imshow('red mask', red_mask)
+    cv.imshow('blue mask', blue_mask)
+    cv.imshow('green mask', green_mask)
+    cv.imshow('brown mask', brown_mask)
+    
     
 
     
