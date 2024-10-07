@@ -19,6 +19,6 @@ _, thresholded_image = cv.threshold(gray_image, 0, 255, cv.THRESH_BINARY)
 contours, _ = cv.findContours(thresholded_image, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
 contour_image = cv.drawContours(result_red_mask.copy(), contours, -1, (0, 255, 0), 2)
 
-cv.imshow('masked', contour_image)
+cv.imshow('masked', result_red_mask)
 cv.waitKey(0)
 cv.destroyAllWindows()
