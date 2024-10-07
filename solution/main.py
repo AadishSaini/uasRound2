@@ -8,6 +8,11 @@ from tools import *
 blue_screen = np.full((640, 640, 3), (255, 255, 0), dtype=np.uint8)
 yellow_screen = np.full((640, 640, 3), (0, 255, 255), dtype=np.uint8)
 
+#requested lists
+houses_list = []
+priority_list = []
+pr_list = []
+
 
 # loop through the images
 for itr in range(1, 12):
@@ -56,14 +61,23 @@ for itr in range(1, 12):
     # finding outputs
     hb = red_in_brown+blue_in_brown
     hg = red_in_green+blue_in_green
-    house_list = [hb, hg]
     pb = red_in_brown + (blue_in_brown*2)
     pg = red_in_green + (blue_in_green*2)
     pr = pb/pg
 
-    #show the output image
-    cv.imshow('window', output_image)
+    houses_list.append([hb, hg])
+    priority_list.append([pb, pg])
+    pr_list.append(pr)
 
-    # end for one image
-    cv.waitKey(0)
-    cv.destroyAllWindows()
+    #show the output image
+    cv.imshow('image'+str(itr), output_image)
+
+
+
+print("the house list : ", houses_list)
+print("the priority_list : ", priority_list)
+print("the pr list in ascending order : ", (np.argsort(pr_list)+1))
+
+# end for one image
+cv.waitKey(0)
+cv.destroyAllWindows()
