@@ -20,7 +20,7 @@ The output of the program is formatted as:
 ```
 the house list :  [[6, 4], [5, 4], [8, 6], [3, 4], [6, 3], [6, 4], [2, 6], [7, 5], [6, 4], [6, 4]]
 the priority_list :  [[8, 6], [8, 6], [12, 10], [4, 7], [9, 4], [10, 5], [3, 10], [10, 8], [8, 5], [8, 6]]
-the pr list in ascending order :  [ 7  4  3  8  1  2 10  9  6  5]
+the pr list in ascending order :  [ 5  6  9 10  2  1  8  3  4  7]
 
 ``` 
 the requested lists are, "houses_list, priority_list, pr_list"
