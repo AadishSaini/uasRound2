@@ -77,7 +77,7 @@ for itr in range(1, 12):
 print("the house list : ", houses_list)
 print("the priority_list : ", priority_list)
 ascendingOrder = (np.argsort(pr_list)+1)
-print("the pr list in ascending order : ", ascendingOrder[::-1])
+print("the pr list in descending order : ", ascendingOrder[::-1])
 
 # end for one image
 cv.waitKey(0)
